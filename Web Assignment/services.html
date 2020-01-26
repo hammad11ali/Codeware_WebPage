@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<head>
+	<title>CODEWAR - Services</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+    <meta name="author" content="">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+	<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="css/my_style.css" rel="stylesheet">
+
+	<script src="js/jquery-1.11.1.min.js"></script> 
+	<script src="js/my_custom.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="menu">
+			<div class="hexagon_container" id="logo">
+				<div class="hexagon hexagon2">
+					<div class="hexagon-in1">
+						<a href="index.html">
+							<div class="hexagon-in2">
+								<h2>CODEWARE</h2>             	 	
+							</div>
+						</a>
+					</div>
+				</div>					
+			</div>
+			<div class="hexagon_container" id="team">
+				<div class="hexagon hexagon2">
+					<div class="hexagon-in1">
+						<a href="team.html">
+							<div class="hexagon-in2">
+								<i class="fa fa-user"></i>
+								<h2>OUR TEAM</h2>             	 	
+							</div>
+						</a>
+					</div>
+				</div>				
+			</div>
+			<div class="hexagon_container" id="services">
+				<div class="hexagon hexagon2">
+					<div class="hexagon-in1">
+						<div class="hexagon-in2 active">
+							<i class="fa fa-cogs"></i>
+							<h2>SERVICES</h2>             	 	
+						</div>
+					</div>
+				</div>
+			</div>		
+			<div class="hexagon_container" id="contact">
+				<div class="hexagon hexagon2">
+					<div class="hexagon-in1">
+						<a href="contact.html">
+							<div class="hexagon-in2">
+								<i class="fa fa-envelope"></i>
+								<h2>CONTACT</h2>             	 	
+							</div>
+						</a>
+					</div>
+				</div>						
+			</div>
+		</div>	
+		<div id="services-content">
+			<header>
+				<h1>Our Services</h1>
+			</header>
+			<div class="content services">
+				<div class="hexagon_container">
+					<div class="hexagon hexagon2 services-item">
+						<div class="hexagon-in1">
+							<div class="hexagon-in2" data-service-description="Id consectetur dolor pariatur aliquip veniam est id consequat. Nisi aliqua esse enim in voluptate anim dolor reprehenderit in in consectetur id. Elit aliquip reprehenderit ex id ad aliquip consequat do enim ea.">
+								<i class="fa fa-pencil"></i>
+							</div>
+						</div>
+					</div>
+					<h2>Clean Layouts</h2> 
+				</div>
+				<div class="hexagon_container">
+					<div class="hexagon hexagon2 services-item">
+						<div class="hexagon-in1">
+							<div class="hexagon-in2" data-service-description="Do cillum aliquip dolore eu ut dolore et et laboris in. Sunt esse mollit occaecat ex est nulla non anim sunt. Nisi tempor culpa consectetur consequat reprehenderit et. Culpa exercitation cillum exercitation.">
+								<i class="fa fa-cog"></i>
+							</div>
+						</div>
+					</div>
+					<h2>Custom Design</h2>
+				</div>
+				<div class="hexagon_container">
+					<div class="hexagon hexagon2 services-item">
+						<div class="hexagon-in1">
+							<div class="hexagon-in2" data-service-description="Laborum ullamco pariatur irure elit culpa consectetur. Velit voluptate adipisicing reprehenderit tempor irure aliquip anim aute reprehenderit anim reprehenderit occaecat anim excepteur. Tempor aliqua laborum Lorem elit minim aliqua dolor exercitation. ">
+								<i class="fa fa-support"></i>
+							</div>
+						</div>
+					</div>
+					<h2>Fast Support</h2>
+				</div>
+				<div class="hexagon_container">
+					<div class="hexagon hexagon2 services-item">
+						<div class="hexagon-in1">
+							<div class="hexagon-in2" data-service-description="Exercitation adipisicing Lorem in pariatur est minim non voluptate aliqua. Proident cupidatat deserunt consectetur deserunt sunt excepteur et nisi nostrud. Ut nisi aute exercitation occaecat incididunt magna est consequat. ">
+								<i class="fa fa-bell"></i>
+							</div>
+						</div>
+					</div>
+					<h2>Social Media</h2>
+				</div>
+				<div class="hexagon_container">
+					<div class="hexagon hexagon2 services-item">
+						<div class="hexagon-in1">
+							<div class="hexagon-in2" data-service-description="Do nulla mollit pariatur reprehenderit commodo veniam anim deserunt aliqua. Laborum id quis non consectetur exercitation fugiat dolor ea do. Velit officia do pariatur aute. Reprehenderit ex quis nulla ad Lorem ullamco. Deserunt minim ipsum eu est.">
+								<i class="fa fa-bullhorn"></i>
+							</div>
+						</div>
+					</div>
+					<h2>Online Marketing</h2>
+				</div>
+				<div class="content-description">
+					<p></p>	
+				</div>			
+			</div>
+		</div>				
+	</div>
+    <div class="my_footer">
+    	Copyright © 2084 Company Name
+    </div>
+	<script type="text/javascript">
+		$("#services-content .hexagon-in2").hover(function() {
+			$('.content-description p').text($(this).data("serviceDescription"));
+			$("#services-content .hexagon-in2").removeClass('active');
+			$(this).addClass('active');
+		});
+	</script>
+</body>
+</html>

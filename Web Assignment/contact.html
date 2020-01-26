@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<head>
+	<title>CODEWAR - Contact</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+    <meta name="author" content="">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+	<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="css/my_style.css" rel="stylesheet">
+
+	<script src="js/jquery-1.11.1.min.js"></script> 
+	<script src="js/my_custom.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="menu">
+			<div class="hexagon_container" id="logo">
+				<div class="hexagon hexagon2">
+					<div class="hexagon-in1">
+						<a href="index.html">
+							<div class="hexagon-in2">
+								<h2>CODEWARE</h2>             	 	
+							</div>
+						</a>
+					</div>
+				</div>					
+			</div>
+			<div class="hexagon_container" id="team">
+				<div class="hexagon hexagon2">
+					<div class="hexagon-in1">
+						<a href="team.html">
+							<div class="hexagon-in2">
+								<i class="fa fa-user"></i>
+								<h2>OUR TEAM</h2>             	 	
+							</div>
+						</a>
+					</div>
+				</div>				
+			</div>
+			<div class="hexagon_container" id="services">
+				<div class="hexagon hexagon2">
+					<div class="hexagon-in1">
+						<a href="services.html">
+							<div class="hexagon-in2">
+								<i class="fa fa-cogs"></i>
+								<h2>SERVICES</h2>             	 	
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>		
+			<div class="hexagon_container" id="contact">
+				<div class="hexagon hexagon2">
+					<div class="hexagon-in1">
+						<div class="hexagon-in2 active">
+							<i class="fa fa-envelope"></i>
+							<h2>CONTACT</h2>             	 	
+						</div>
+					</div>
+				</div>						
+			</div>
+		</div>	
+		<div id="contact-content">
+			<header>
+				<h1>Send us a message</h1>
+			</header>
+			<div class="content contact">
+				<form action="#" method="post" onsubmit="return submitForm()" role="form">
+					<div class="my_form">
+						<input name="fullname" required type="text" class="form-control" id="fullname" placeholder="Your Name" maxlength="40">
+					</div>
+					<div class="my_form">
+						<input name="email" required type="email" class="form-control" id="email" placeholder="name@example.com" maxlength="40">
+					</div>
+					<div class="my_form">
+						<textarea name="message" oninput="count()" required minlength="40" maxlength="100" rows="10" class="form-control" id="message" placeholder="Message"></textarea>
+						<p id="textCount">Min: 0/40</p>
+					</div>
+					<div class="my_form">
+                    	<button type="submit" class="btn btn-primary">Send</button>
+                    </div>
+				</form>
+			</div>
+		</div>				
+	</div>
+    <div class="my_footer">
+    	Copyright © 2084 Company Name
+    </div>
+
+</body>
+</html>
